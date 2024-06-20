@@ -1,0 +1,41 @@
+/*Estilos para evitar desbordaminetos*/
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+*{
+    box-sizing: border-box;
+}
+/*Estilos a img background*/
+.containerStyle{
+    border: 1px solid darkgray;
+    padding: 5%;
+}
+@media only screen and(min-width:600px) {
+    .margen{
+        margin-left: 500px;
+    }
+}
+/* Estilos al recuadro del resultado */
+.result{
+    border: 1px solid darkgray;
+    width: 30%;
+    margin: auto;
+    margin-top: 3%;
+}
+/*Media query para agrandar caja de result en pantallas pequeñas*/
+@media only screen and (max-width:600px) {
+    .result{
+        width: 90%;
+    }
+}
+/*Estilos a los inputs*/
+.inputs{
+    border: 1px solid darkgray;
+}
+.inputs:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px 1px darkgray;
+}
